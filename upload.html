@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Vibes - Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">🌅 Sunset Vibes</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upload.html" class="active">Upload</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="upload-container">
+            <h2>Upload a New Sunset</h2>
+            <p>Select your video file (mp4, mov)</p>
+
+            <div class="file-drop-zone" id="dropZone">
+                <span style="font-size: 3rem;">📁</span>
+                <p>Drag & Drop or Click to Browse</p>
+                <input type="file" id="videoInput" class="file-input" accept="video/*">
+            </div>
+
+            <div id="previewContainer" style="display: none; margin-bottom: 1rem;">
+                <p id="fileName" style="margin-bottom: 0.5rem;"></p>
+                <progress id="uploadProgress" value="0" max="100" style="width: 100%; display: none;"></progress>
+            </div>
+
+            <button id="uploadButton" class="cta-button" disabled>Upload Now 🚀</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sunset Vibes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
